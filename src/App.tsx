@@ -3,10 +3,11 @@ import "./App.css";
 
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import DeletionOptions from "./pages/deletionOptions";
 
 function App() {
   const location = useLocation();
-  const hideNav = ["/privacy", "/terms"].includes(location.pathname);
+  const hideNav = ["/privacy", "/terms", "/deletion-options"].includes(location.pathname);
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -22,6 +23,9 @@ function App() {
               </Link>
               <Link to="/terms" className="hover:text-blue-600">
                 Terms
+              </Link>
+              <Link to="/deletion-options" className="hover:text-blue-600">
+                Deletion Options
               </Link>
             </nav>
           </div>
@@ -43,6 +47,7 @@ function App() {
           />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/deletion-options" element={<DeletionOptions />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
