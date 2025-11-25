@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function DeletionOptions() {
   return (
     <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center">
