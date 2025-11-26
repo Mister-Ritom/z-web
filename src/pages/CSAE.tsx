@@ -27,7 +27,7 @@ export default function CsaeSafetyPage() {
           <p className="text-gray-700">Users should report any suspected CSAE content or behavior immediately. Reports can be made via:</p>
           <ol className="list-decimal list-inside text-gray-700 space-y-2">
             <li>In‑app Report button on the content or user profile.</li>
-            <li>Email: <a href="mailto:safety@z.example" className="underline">safety@z.example</a></li>
+            <li>Email: <a href="mailto:ritomghosh856@gmail.com" className="underline">ritomghosh856@gmail.com</a></li>
             <li>Web form: <a href="/report" className="underline">/report</a></li>
           </ol>
           <p className="text-sm text-gray-500">Provide as much detail as possible (user handle, links, screenshots, timestamps). We do not ask reporters for unnecessary personal information.</p>
@@ -60,7 +60,7 @@ export default function CsaeSafetyPage() {
 
         <section className="mt-6 space-y-4">
           <h2 className="text-xl font-semibold">8. Contact &amp; Effective Date</h2>
-          <p className="text-gray-700">If you have questions about this policy or need to report urgent concerns, email: <a href="mailto:safety@z.example" className="underline">safety@z.example</a>. This policy is effective as of <strong>Nov 26, 2025</strong>.</p>
+          <p className="text-gray-700">If you have questions about this policy or need to report urgent concerns, email: <a href="mailto:ritomghosh856@gmail.com" className="underline">ritomghosh856@gmail.com</a>. This policy is effective as of <strong>Nov 26, 2025</strong>.</p>
         </section>
 
         <footer className="mt-8 text-sm text-gray-500">
