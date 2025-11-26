@@ -4,10 +4,13 @@ import "./App.css";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import DeletionOptions from "./pages/deletionOptions";
+import CSAE from "./pages/CSAE";
 
 function App() {
   const location = useLocation();
-  const hideNav = ["/privacy", "/terms", "/deletion-options"].includes(location.pathname);
+  const hideNav = ["/privacy", "/terms", "/deletion-options", "/csae"].includes(
+    location.pathname
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -27,6 +30,9 @@ function App() {
               <Link to="/deletion-options" className="hover:text-blue-600">
                 Deletion Options
               </Link>
+              <Link to="/csae" className="hover:text-blue-600">
+                Safety Standards
+              </Link>
             </nav>
           </div>
         </header>
@@ -38,9 +44,9 @@ function App() {
             path="/"
             element={
               <div className="space-y-4">
-                <h1 className="text-3xl font-bold">Welcome</h1>
+                <h1 className="text-3xl font-bold">Welcome to Z</h1>
                 <p className="text-gray-600">
-                  This starter now has Tailwind CSS and React Router.
+                  Z is a social platform where people connect, chat, and share freely.
                 </p>
               </div>
             }
@@ -48,6 +54,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/deletion-options" element={<DeletionOptions />} />
+          <Route path="/csae" element={<CSAE />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
